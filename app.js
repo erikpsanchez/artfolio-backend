@@ -35,9 +35,9 @@ app.use(function (req, res, next) {
 app.use(express.json());
 
 // Database models
-const models = require('./src/models');
+const models = require('./models');
 
 // Routes
-require('./src/api')(app);
+require('./api')(app);
 
 module.exports = app;
